@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Administration</title>
+</head>
+
+<body>
+
+    <div id="connexion">
+
+        <h1>Administration</h1>
+
+        <label for="motDePasse">Mot de passe :</label>
+        <input type="password" id="motDePasse">
+
+        <button id="boutonConnexion">Entrer</button>
+
+        <p id="erreur"></p>
+
+    </div>
+
+
+    <div id="panelAdmin" style="display: none;">
+
+        <h1>Panel administrateur</h1>
+
+        <h2>Ajouter une photo</h2>
+
+        <input type="file" id="photo" accept="image/*">
+
+        <button id="boutonAjouter">
+            Ajouter la photo
+        </button>
+
+        <p id="message"></p>
+
+
+        <h2>Photos actuellement en ligne</h2>
+
+        <ul id="listePhotos"></ul>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <script src="supabase.js"></script>
+
+    <script src="admin.js"></script>
+
+</body>
+
+</html>
